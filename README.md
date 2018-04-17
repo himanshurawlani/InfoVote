@@ -1,0 +1,2 @@
+# InfoVote
+Django powered website
