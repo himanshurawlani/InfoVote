@@ -50,7 +50,7 @@ class ResultsView(generic.ListView):
         elif search_param == 'state':
             return State.objects.filter(state__startswith=search_key)
         elif search_param == 'constituency':
-            return Constituencies.objects.filter(constituency__startswith=search_key)
+            return Constituency_State.objects.filter(constituency__startswith=search_key)
         elif search_param == 'state-to-constituency':
             self.kwargs['search_param'] = 'constituency'
             search_key = search_key.replace('-',' ')
